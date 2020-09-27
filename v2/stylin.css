@@ -1,0 +1,74 @@
+h1 {
+    text-align: center;
+}
+
+h2 {
+    text-align: center;
+}
+
+h3 {
+    text-align: center;
+    color: #009c91;
+}
+
+p {
+    text-align: center;
+}
+
+img {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+body {
+    background-color: powderblue;
+    padding: 60px;
+    margin: auto;
+    width: 50%;
+    position: center;
+    left: 0px;
+    line-height: 1.5;
+}
+
+.legend {
+    float: right;
+    width: 15px;
+    height: 15px;
+    margin: 5px;
+    border: 1px solid rgba(0, 0, 0, .2)
+}
+
+.good {
+    background-color: darkgreen;
+}
+
+.ok {
+    background-color: darkorange;
+}
+
+.bad {
+    background-color: darkred;
+}
+
+.container { 
+    height: 200px;
+    position: relative;
+}
+  
+.center {
+margin: 0;
+position: absolute;
+top: 50%;
+left: 50%;
+-ms-transform: translate(-50%, -50%);
+transform: translate(-50%, -50%);
+}
+
+.header {
+    padding: 30px;
+    text-align: center;
+    background-color: #009c91;
+    color: white;
+    font-size: 20px;
+}

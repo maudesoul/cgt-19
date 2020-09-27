@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <style>
+       /* Set the size of the div element that contains the map */
+      #map {
+        height: 400px;  /* The height is 400 pixels */
+        width: 100%;  /* The width is the width of the web page */
+       }
+    </style>
+  </head>
+  <body>
+    <h3>CGTracker-19</h3>
+    <!--The div element for the map -->
+    <div id="map"></div>
+    <script>
+// Initialize and add the map
+function initMap() {
+  // The location of Florida
+  var florida = {lat: 27.994402, lng: -81.760254};
+  // The map, centered at Florida
+  var map = new google.maps.Map(
+      document.getElementById('map'), {zoom: 4, center: florida});
+  // The marker, positioned at Florida
+  var marker = new google.maps.Marker({position: florida, map: map});
+}
+    </script>
+    <script defer
+    src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAnohpTQIhfEcwcwU3YfaubMJNB3tKBMo4&callback=initMap">
+    </script>
+  </body>
+</html>
